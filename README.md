@@ -1,27 +1,65 @@
-# Banderas
+# Angular Country App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+Esta es una aplicación Angular que permite a los usuarios buscar países por su **nombre**, **capital**, o **región**. 
 
-## Development server
+La aplicación muestra información detallada de cada país como su bandera, nombre, capital, población, y región. Además, los usuarios pueden navegar a una página con más información específica sobre cada país.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Mapa](/public/mapa.png)
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Búsqueda por nombre**: Busca países ingresando su nombre.
+- **Búsqueda por capital**: Encuentra países basados en el nombre de su capital.
+- **Búsqueda por región**: Filtra países seleccionando una región específica (África, Américas, Asia, Europa, Oceanía).
+- **Vista detallada**: Al hacer clic en 'Más info', se navega a una página que muestra información completa sobre el país seleccionado.
+- **Tabla interactiva**: Muestra los resultados de búsqueda en una tabla organizada con datos clave de los países.
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona el repositorio:
 
-## Running unit tests
+  `` git clone https://github.com/usuario/angular-country-search-app.git ``
+  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navega al directorio del proyecto:
+   
+  `` cd countries-angular-app ``
+  
+3. Instala las dependencias:
+   
+   `` npm install ``
 
-## Running end-to-end tests
+4. Inicia el servidor de desarrollo:
+   
+   `` ng serve``
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Abre la aplicación en tu navegador en `http://localhost:4200`.
 
-## Further help
+## Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Utiliza la barra de búsqueda para encontrar países por su nombre o capital.
+2. Navega a la sección de regiones para filtrar países por continente.
+3. Haz clic en 'Más info' para ver los detalles completos de un país.
+
+
+## Tecnologías
+
+- **Angular**: Framework de desarrollo web.
+- **HttpClient**: Módulo de Angular para realizar peticiones HTTP.
+- **jQuery**: Librería de JavaScript para simplificar la manipulación del DOM.
+- **Bootstrap**: Framework de CSS para diseñar interfaces web responsivas.
+
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza los cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`).
+4. Sube los cambios a tu repositorio (`git push origin feature/nueva-funcionalidad`).
+5. Crea un pull request para revisar tus cambios.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
