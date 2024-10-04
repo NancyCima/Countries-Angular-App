@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './contact-page.component.html',
   styles: ``
 })
-export class ContactPageComponent {
 
+export class ContactPageComponent {
+  contact = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
+  onSubmit() {
+    console.log('Formulario enviado:', this.contact);
+    // Aquí se puede agregar la lógica para enviar el formulario.
+    // Por ejemplo, enviar los datos a una API o mostrar un mensaje de éxito.
+    this.contact = { name: '', email: '', message: '' };
+  }
 }
