@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { HttpClientModule, provideHttpClient} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     SharedModule,
     HttpClientModule

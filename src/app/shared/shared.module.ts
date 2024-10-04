@@ -12,8 +12,8 @@ import { SearchboxComponent } from './components/searchbox/searchbox.component';
   declarations: [
     HomePageComponent,
     AboutPageComponent,
-    DisebarComponent,
     ContactPageComponent,
+    DisebarComponent,
     SearchboxComponent
   ],
   imports: [
@@ -22,7 +22,11 @@ import { SearchboxComponent } from './components/searchbox/searchbox.component';
     FormsModule,
   ],
   exports:[
-    HomePageComponent,AboutPageComponent,DisebarComponent,ContactPageComponent,SearchboxComponent
+    HomePageComponent,
+    AboutPageComponent,
+    ContactPageComponent,
+    DisebarComponent,
+    SearchboxComponent
   ]
 })
 export class SharedModule { }
