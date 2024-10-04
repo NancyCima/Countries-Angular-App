@@ -30,7 +30,7 @@
               <td>{{ country.population | number }}</td>
               <td>{{ country.region }}</td>
               <td>
-                <a href="#" class="btn btn-primary btn-sm">Más info</a>
+                <a (click)="onCountryClick(country.name.common)" class="btn btn-primary btn-sm">Más info</a>
               </td>
             </tr>
           </tbody>

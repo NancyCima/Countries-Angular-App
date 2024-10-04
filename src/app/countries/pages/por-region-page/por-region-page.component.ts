@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CountriService } from '../../services/countries.services';
 import { Country } from '../../interfaces/country';
 
@@ -10,7 +11,7 @@ import { Country } from '../../interfaces/country';
 export class PorRegionPageComponent {
   countries:Country[]=[]
 
-  constructor(public countrisServices:CountriService){}
+  constructor(private router: Router, public countrisServices:CountriService){}
 
   searchByregion(term: string): void {
     this.countrisServices.getCountriesByRegion(term).subscribe((countries: Country[]) => {
@@ -18,6 +19,9 @@ export class PorRegionPageComponent {
         country.region.toLowerCase().startsWith(term.toLowerCase())
       );
     });
-  }  
-}
+  }
 
+  goToCountry(countryName: string): void {
+    this.router.navigate(['/country', countryName]);
+  }
+}
